@@ -12,6 +12,13 @@ class DetailViewController: UIViewController, StoryboardInitializable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupNavigationController()
+    }
+    
+    fileprivate func setupNavigationController() {
+        navigationItem.title = "Detail View Controller"
+        view.backgroundColor = .lightGray
     }
     
 }
