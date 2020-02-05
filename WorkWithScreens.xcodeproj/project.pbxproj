@@ -12,6 +12,7 @@
 		2EEEE3A723EAB72800B78323 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEE3A523EAB72800B78323 /* MainViewController.storyboard */; };
 		2EEEE3A923EAB72B00B78323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEE3A823EAB72B00B78323 /* Assets.xcassets */; };
 		2EEEE3AC23EAB72B00B78323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEE3AA23EAB72B00B78323 /* LaunchScreen.storyboard */; };
+		2EEEE3B423EABBB400B78323 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEE3B323EABBB400B78323 /* StoryboardInitializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2EEEE3A823EAB72B00B78323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EEEE3AB23EAB72B00B78323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EEEE3AD23EAB72B00B78323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EEEE3B323EABBB400B78323 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		2EEEE39523EAB72800B78323 = {
 			isa = PBXGroup;
 			children = (
+				2EEEE3B523EABBBC00B78323 /* Extension */,
+				2EEEE3B323EABBB400B78323 /* StoryboardInitializable.swift */,
 				2EEEE3A023EAB72800B78323 /* WorkWithScreens */,
 				2EEEE39F23EAB72800B78323 /* Products */,
 			);
@@ -62,6 +66,13 @@
 				2EEEE3AD23EAB72B00B78323 /* Info.plist */,
 			);
 			path = WorkWithScreens;
+			sourceTree = "<group>";
+		};
+		2EEEE3B523EABBBC00B78323 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				2EEEE3A423EAB72800B78323 /* MainViewController.swift in Sources */,
 				2EEEE3A223EAB72800B78323 /* AppDelegate.swift in Sources */,
+				2EEEE3B423EABBB400B78323 /* StoryboardInitializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
