@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  WorkWithScreens
 //
 //  Created by Egor Syrtcov on 2/5/20.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+class DetailViewController: UIViewController, StoryboardInitializable {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
 }
-
