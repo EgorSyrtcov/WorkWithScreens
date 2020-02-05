@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
         
     }
     
-    @IBAction func nextVCButton(_ sender: UIButton) {
+    @IBAction private func nextVCButton(_ sender: UIButton) {
         let detailViewController = DetailViewController.initFromStoryboard()
         navigationController?.pushViewController(detailViewController, animated: true)
     }

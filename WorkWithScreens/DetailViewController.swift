@@ -16,7 +16,7 @@ class DetailViewController: UIViewController, StoryboardInitializable {
         setupNavigationController()
     }
     
-    fileprivate func setupNavigationController() {
+    private func setupNavigationController() {
         navigationItem.title = "Detail View Controller"
         view.backgroundColor = .lightGray
     }
