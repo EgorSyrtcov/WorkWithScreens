@@ -10,13 +10,10 @@ import UIKit
 
 class MenuTabBarController: UITabBarController, StoryboardInitializable {
     
-    private let newVC = NewsViewController()
-    private let emailVC = EmailViewController()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewControllers = [createController(title: "NewVC", imageName: "news", vc: newVC), createController(title: "EmailVC", imageName: "mail", vc: emailVC)]
+        viewControllers = [createController(title: "NewVC", imageName: "news", vc: NewsViewController()), createController(title: "EmailVC", imageName: "mail", vc: EmailViewController())]
         
     }
     

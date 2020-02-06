@@ -15,27 +15,21 @@ class MainViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToDetailVC" {
-            
-        }
-    }
-    
     @IBAction func nextToPush(_ sender: UIButton) {
-        let vc = UIStoryboard.init(name: "DetailViewController", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
-        navigationController?.pushViewController(vc!, animated: true)
+        let vc = UIStoryboard.init(name: "DetailViewController", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func nextNCPresenter(_ sender: UIButton) {
-        let vc = UIStoryboard.init(name: "DetailViewController", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
-        navigationController?.present(vc!, animated: true, completion: nil)
+        let vc = UIStoryboard.init(name: "DetailViewController", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        navigationController?.present(vc, animated: true, completion: nil)
     }
     
     
     @IBAction func nextVCtoAppdelegate(_ sender: UIButton) {
         let vc = UIStoryboard.init(name: "DetailViewController", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         let appDelegate = UIApplication.shared.delegate
-        appDelegate?.window??.rootViewController = vc
+        appDelegate?.window?!.rootViewController = vc
     }
     
     @IBAction func nextToTabBar(_ sender: Any) {
