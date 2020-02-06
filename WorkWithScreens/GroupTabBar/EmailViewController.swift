@@ -14,6 +14,7 @@ class EmailViewController: UIViewController {
         super.viewDidLoad()
 
        view.backgroundColor = .yellow
+        navigationItem.title = "Email"
     }
 
     /*

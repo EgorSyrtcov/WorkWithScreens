@@ -14,7 +14,7 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .red
-    
+        navigationItem.title = "News"
     }
     
 

@@ -26,4 +26,5 @@ class MenuTabBarController: UITabBarController, StoryboardInitializable {
         recentVc.tabBarItem.image = UIImage(named: imageName)
         return recentVc
     }
+    
 }
