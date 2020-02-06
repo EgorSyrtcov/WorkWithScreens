@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EEDC71923EC03A100A6113F /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDC71823EC03A100A6113F /* MenuTabBarController.swift */; };
+		2EEDC71D23EC08A500A6113F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDC71C23EC08A500A6113F /* NewsViewController.swift */; };
+		2EEDC71F23EC08BE00A6113F /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDC71E23EC08BE00A6113F /* EmailViewController.swift */; };
+		2EEDC72223EC0AA400A6113F /* MenuTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEDC72123EC0AA400A6113F /* MenuTabBarController.storyboard */; };
 		2EEEE3A223EAB72800B78323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEE3A123EAB72800B78323 /* AppDelegate.swift */; };
 		2EEEE3A423EAB72800B78323 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEE3A323EAB72800B78323 /* MainViewController.swift */; };
 		2EEEE3A723EAB72800B78323 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EEEE3A523EAB72800B78323 /* MainViewController.storyboard */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EEDC71823EC03A100A6113F /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
+		2EEDC71C23EC08A500A6113F /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		2EEDC71E23EC08BE00A6113F /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		2EEDC72123EC0AA400A6113F /* MenuTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuTabBarController.storyboard; sourceTree = "<group>"; };
 		2EEEE39E23EAB72800B78323 /* WorkWithScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkWithScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EEEE3A123EAB72800B78323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EEEE3A323EAB72800B78323 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EEDC72023EC08C400A6113F /* GroupTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDC71E23EC08BE00A6113F /* EmailViewController.swift */,
+				2EEDC71C23EC08A500A6113F /* NewsViewController.swift */,
+			);
+			path = GroupTabBar;
+			sourceTree = "<group>";
+		};
 		2EEEE39523EAB72800B78323 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +84,9 @@
 				2EEEE3A523EAB72800B78323 /* MainViewController.storyboard */,
 				2EEEE3B623EABF7A00B78323 /* DetailViewController.swift */,
 				2EEEE3B823EABFAD00B78323 /* DetailViewController.storyboard */,
+				2EEDC71823EC03A100A6113F /* MenuTabBarController.swift */,
+				2EEDC72123EC0AA400A6113F /* MenuTabBarController.storyboard */,
+				2EEDC72023EC08C400A6113F /* GroupTabBar */,
 				2EEEE3A823EAB72B00B78323 /* Assets.xcassets */,
 				2EEEE3AA23EAB72B00B78323 /* LaunchScreen.storyboard */,
 				2EEEE3AD23EAB72B00B78323 /* Info.plist */,
@@ -140,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EEEE3B923EABFAD00B78323 /* DetailViewController.storyboard in Resources */,
+				2EEDC72223EC0AA400A6113F /* MenuTabBarController.storyboard in Resources */,
 				2EEEE3AC23EAB72B00B78323 /* LaunchScreen.storyboard in Resources */,
 				2EEEE3A923EAB72B00B78323 /* Assets.xcassets in Resources */,
 				2EEEE3A723EAB72800B78323 /* MainViewController.storyboard in Resources */,
@@ -156,6 +177,9 @@
 				2EEEE3A423EAB72800B78323 /* MainViewController.swift in Sources */,
 				2EEEE3A223EAB72800B78323 /* AppDelegate.swift in Sources */,
 				2EEEE3B423EABBB400B78323 /* StoryboardInitializable.swift in Sources */,
+				2EEDC71D23EC08A500A6113F /* NewsViewController.swift in Sources */,
+				2EEDC71923EC03A100A6113F /* MenuTabBarController.swift in Sources */,
+				2EEDC71F23EC08BE00A6113F /* EmailViewController.swift in Sources */,
 				2EEEE3B723EABF7A00B78323 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

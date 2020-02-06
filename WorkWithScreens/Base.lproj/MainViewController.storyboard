@@ -18,22 +18,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU0-gX-ZvF">
-                                <rect key="frame" x="119.5" y="424" width="175" height="48"/>
-                                <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="NextDetailVC">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klK-KE-rem"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="caf-rH-y8t">
+                                <rect key="frame" x="120.5" y="279" width="173" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2R-b7-9D4">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="48"/>
+                                        <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="NextToSegue">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="3n4-HV-jdr" kind="show" identifier="segueToDetailVC" id="eGX-uj-eF9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUw-r3-jgC">
+                                        <rect key="frame" x="0.0" y="58" width="173" height="48"/>
+                                        <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="NCtoPush">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextToPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="31n-Qo-V8b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJi-iY-Gf6">
+                                        <rect key="frame" x="0.0" y="116" width="173" height="48"/>
+                                        <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="NCtoPresent">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextNCPresenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhG-sX-j1V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac9-jF-a6Q">
+                                        <rect key="frame" x="0.0" y="174" width="173" height="48"/>
+                                        <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="appDelegate">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextVCtoAppdelegate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4P-aQ-bpS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-7J-B27">
+                                        <rect key="frame" x="0.0" y="232" width="173" height="48"/>
+                                        <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="tabBar">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextToTabBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFu-J8-HeR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7y-h3-t2q">
+                                        <rect key="frame" x="0.0" y="290" width="173" height="48"/>
+                                        <color key="backgroundColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="toExtension">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextToExtention:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPx-vu-Lp6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oU0-gX-ZvF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l8h-Pq-CAd"/>
-                            <constraint firstItem="oU0-gX-ZvF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sL6-sn-oYY"/>
+                            <constraint firstItem="caf-rH-y8t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="03T-rG-zTA"/>
+                            <constraint firstItem="caf-rH-y8t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8qV-2o-m3Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -42,6 +102,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="120.53571428571428"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="dWb-II-eDf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailViewController" id="3n4-HV-jdr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTi-8T-IVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4uo-oD-ZyP">
