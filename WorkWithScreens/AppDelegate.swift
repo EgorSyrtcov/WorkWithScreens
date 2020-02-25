@@ -17,7 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         print("Fix bug done")
+        print("Hello Swift")
+        print("Bug fix branch")
         return true
+    }
+    
+    func bugFix() {
+        print("Bug")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
